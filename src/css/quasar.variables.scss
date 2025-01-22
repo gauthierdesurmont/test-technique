@@ -1,0 +1,130 @@
+// Quasar SCSS (& Sass) Variables
+// --------------------------------------------------
+// To customize the look and feel of this app, you can override
+// the Sass/SCSS variables found in Quasar's source Sass/SCSS files.
+
+// Check documentation for full list of Quasar variables
+
+// Your own variables (that are declared here) and Quasar's own
+// ones will be available out of the box in your .vue/.scss/.sass files
+
+// It's highly recommended to change the default colors
+// to match your app's branding.
+// Tip: Use the "Theme Builder" on Quasar's documentation website.
+
+$blue-paris: #59b5db;
+$blue-beau: #bde1f1;
+$blue-paypal: #253b80;
+$green-zinc: #2e6d71;
+$green-wallace: #004f3c;
+$green-haze: #00a258;
+$green-trustpilot: #00b67a;
+$yellow-tanoi: #ffda8c;
+$yellow-crayola: #e7b26d;
+$yellow-paypal: #ffc43a;
+$orange-peach: #ffc498;
+$orange-pumpkin: #ff6e00;
+$rose-bush: #ffc3c7;
+$grey-maimin: #f6f5ef;
+$transparent: transparent;
+
+$grey-background: #edecea;
+$grey-border: #d7d4cf;
+$grey-label: #aeadab;
+$grey-light: #464646;
+
+$primary: $yellow-tanoi;
+$secondary: $green-zinc;
+
+$accent: $blue-paris;
+$dark: #464646;
+$dark-page: #121212;
+$positive: #41b980;
+$negative: #e84562;
+$info: #31ccec;
+$warning: #f0b615;
+
+// Default quasar colors
+$red: #f44336;
+$pink: #e91e63;
+$purple: #9c27b0;
+$deep-purple: #673ab7;
+$indigo: #3f51b5;
+$blue: #2196f3;
+$light-blue: #03a9f4;
+$cyan: #00bcd4;
+$teal: #009688;
+$green: #4caf50;
+$light-green: #8bc34a;
+$lime: #cddc39;
+$yellow: #ffeb3b;
+$amber: #ffc107;
+$orange: #ff9800;
+$deep-orange: #ff5722;
+$brown: #795548;
+$grey: #9e9e9e;
+$blue-grey: #607d8b;
+$black: #000000;
+$white: #ffffff;
+
+$app-border-radius-xl: 40px;
+$app-border-radius-lg: 16px;
+$app-border-radius-md: 12px;
+$app-border-radius-sm: 8px;
+
+$colours: (
+        'blue-paris': $blue-paris,
+        'blue-beau': $blue-beau,
+        'blue-paypal': $blue-paypal,
+        'green-zinc': $green-zinc,
+        'green-wallace': $green-wallace,
+        'green-haze': $green-haze,
+        'green-trustpilot': $green-trustpilot,
+        'yellow-tanoi': $yellow-tanoi,
+        'yellow-crayola': $yellow-crayola,
+        'yellow-paypal': $yellow-paypal,
+        'orange-pumpkin': $orange-pumpkin,
+        'orange-peach': $orange-peach,
+        'rose-bush': $rose-bush,
+        'grey-maimin': $grey-maimin,
+        'grey-background': $grey-background,
+        'grey-border': $grey-border,
+        'grey-label': $grey-label,
+        'grey-light': $grey-light,
+        'primary': $primary,
+        'secondary': $secondary,
+        'accent': $accent,
+        'dark': $dark,
+        'dark-page': $dark-page,
+        'positive': $positive,
+        'negative': $negative,
+        'info': $info,
+        'warning': $warning,
+        'black': $black,
+        'white': $white,
+        'blue': $blue,
+        'red': $red,
+        'green': $green,
+        'yellow': $yellow,
+        'purple': $purple,
+        'pink': $pink,
+        'cyan': $cyan,
+        'teal': $teal,
+        'grey': $grey,
+        'transparent': $transparent
+);
+
+@each $color, $value in $colours {
+  .bg-#{$color} {
+    background-color: $value !important;
+  }
+  .text-#{$color} {
+    color: $value !important;
+  }
+  .icon-#{$color} {
+    // Created for q-chip to set an icon color different from the text-color
+    i {
+      color: $value !important;
+    }
+  }
+}
